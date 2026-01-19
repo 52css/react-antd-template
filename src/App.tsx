@@ -1,41 +1,24 @@
-import { useState } from "react";
-import { Button } from "antd";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+// 通过vite读取./models 下所有json文件
+type ModelData = Record<string, unknown>;
+const modules: Record<string, ModelData> = import.meta.glob<ModelData>(
+  "./models/**/*.json",
+  {
+    eager: true,
+    import: "default",
+  },
+);
 
+import View from "@/components/View";
+
+function App() {
   return (
-    <>
-      <div className="p-4 mb-4 rounded bg-blue-100 text-blue-700">
-        Tailwind 已启用
-      </div>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-        <div className="mt-4">
-          <Button type="primary">Antd Button</Button>
-        </div>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <section className="flex flex-col gap-4">
+      {Object.entries(modules).map(([key, data]) => (
+        <View key={key} data={data} />
+      ))}
+    </section>
   );
 }
 

@@ -1,0 +1,21 @@
+{
+  "t1": {
+    "$type": "Title",
+    "title": "Hello, 31!"
+  },
+  "t2": [
+    {
+      "$type": "Title",
+      "title": "Hello, 321!"
+    },
+    {
+      "$type": "Title",
+      "title": "Hello, 322!"
+    }
+  ],
+  "t3": {
+    "$type": "Title",
+    "title": "Hello, 33!",
+    "className": "ml-auto"
+  }
+}

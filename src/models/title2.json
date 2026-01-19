@@ -1,0 +1,16 @@
+{
+  "className": "gap-2",
+  "t1": {
+    "$type": "Title",
+    "title": "Hello, 21!"
+  },
+  "t2": {
+    "$type": "Title",
+    "title": "Hello, 22!",
+    "className": "mr-auto"
+  },
+  "t3": {
+    "$type": "Title",
+    "title": "Hello, 23!"
+  }
+}

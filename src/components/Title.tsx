@@ -1,14 +1,14 @@
 import type { FC } from "react";
 import { clx } from "@/utils/clx";
 
-export type $TitleProps = {
+export interface TitleProps {
   parentKey?: string;
   parentKeys?: string[];
   title?: string;
   className?: string;
 };
 
-const $Title: FC<$TitleProps> = ({ className, title }) => {
+const Title: FC<TitleProps> = ({ className, title }) => {
   return (
     <div
       className={clx("title text-[rgba(0,0,0,0.45)] text-[14px]", className)}
@@ -18,4 +18,4 @@ const $Title: FC<$TitleProps> = ({ className, title }) => {
   );
 };
 
-export default $Title;
+export default Title;

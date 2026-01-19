@@ -1,0 +1,36 @@
+{
+  "t1": [
+    {
+      "className": "gap-2",
+      "t2": {
+        "$type": "Title",
+        "title": "Hello, 411!"
+      },
+      "t3": {
+        "$type": "Title",
+        "title": "Hello, 412!"
+      },
+      "t4": {
+        "$type": "Title",
+        "title": "Hello, 413!"
+      }
+    },
+    {
+      "className": "gap-2",
+      "t2": {
+        "$type": "Title",
+        "title": "Hello, 421!",
+        "className": "ml-auto"
+      },
+      "t3": {
+        "$type": "Title",
+        "title": "Hello, 422!",
+        "className": "mr-auto"
+      }
+    }
+  ],
+  "t2": {
+    "$type": "Title",
+    "title": "Hello, 433!"
+  }
+}

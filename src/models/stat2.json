@@ -1,0 +1,13 @@
+{
+  "className": "grid grid-cols-4 gap-4",
+  "a": {
+    "$type": "Stat",
+    "title": "A",
+    "value": 10000000
+  },
+  "b": {
+    "$type": "Stat",
+    "title": "B",
+    "value": 200
+  }
+}
