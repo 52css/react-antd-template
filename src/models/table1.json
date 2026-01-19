@@ -1,0 +1,31 @@
+{
+  "className": "grid grid-cols-2 gap-4",
+  "a": {
+    "$type": "Table",
+    "title": "A",
+    "data": [
+      {
+        "a": "1",
+        "b": "2"
+      },
+      {
+        "a": "3",
+        "b": "4"
+      }
+    ]
+  },
+  "b": {
+    "$type": "Table",
+    "title": "B",
+    "data": [
+      {
+        "c": "1",
+        "d": "2"
+      },
+      {
+        "c": "3",
+        "d": "4"
+      }
+    ]
+  }
+}

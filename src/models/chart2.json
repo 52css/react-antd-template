@@ -1,0 +1,15 @@
+{
+  "className": "grid grid-cols-2 gap-4",
+  "a": {
+    "$type": "Chart",
+    "title": "B",
+    "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "yData": [150, 230, 224, 218, 135, 147, 260]
+  },
+  "b": {
+    "$type": "Chart",
+    "title": "C",
+    "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "yData": [150, 230, 224, 218, 135, 147, 260]
+  }
+}

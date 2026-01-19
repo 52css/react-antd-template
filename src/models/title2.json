@@ -6,8 +6,7 @@
   },
   "t2": {
     "$type": "Title",
-    "title": "Hello, 22!",
-    "className": "mr-auto"
+    "title": "Hello, 22!"
   },
   "t3": {
     "$type": "Title",

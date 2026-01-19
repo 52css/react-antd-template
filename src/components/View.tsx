@@ -3,13 +3,19 @@ import { clx } from "@/utils/clx";
 
 import Title from "@/components/Title";
 import Stat from "@/components/Stat";
+import Table from "@/components/Table";
+import Chart from "@/components/Chart";
 
 export interface ViewProps {
   className?: string;
   children?: ReactNode;
   parentKey?: string | number;
   parentKeys?: (string | number)[];
-  data?: Record<string, any>;
+  data?: {
+    className?: string;
+    $type?: string;
+    [key: string]: any;
+  };
 }
 
 const View: FC<ViewProps> = ({
@@ -24,8 +30,8 @@ const View: FC<ViewProps> = ({
     const ComponentMap = {
       Title,
       Stat,
-      // Table: $Table,
-      // Chart: $Chart,
+      Table,
+      Chart,
       // Form: $Form,
       // AutoComplete: $AutoComplete,
       // Cascader: $Cascader,
