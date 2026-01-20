@@ -5,6 +5,7 @@ import Title from "@/components/Title";
 import Stat from "@/components/Stat";
 import Table from "@/components/Table";
 import Chart from "@/components/Chart";
+import Link from "./Link";
 
 export type ViewProps = {
   className?: string;
@@ -32,6 +33,7 @@ const View: FC<ViewProps> = ({
       Stat,
       Table,
       Chart,
+      Link,
       // Form: $Form,
       // AutoComplete: $AutoComplete,
       // Cascader: $Cascader,
@@ -57,7 +59,6 @@ const View: FC<ViewProps> = ({
       // Transfer: $Transfer,
       // TreeSelect: $TreeSelect,
       // Upload: $Upload,
-      // Link: $Link,
       // TabsForm: $TabsForm,
     };
     return ComponentMap[$type];

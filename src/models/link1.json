@@ -1,0 +1,19 @@
+[
+  {
+    "$type": "Title",
+    "title": "Deposit"
+  },
+  {
+    "className": "gap-4 mt-[-16px]",
+    "a": {
+      "$type": "Link",
+      "title": "Deposit Dashboard",
+      "href": "https://www.baidu.com"
+    },
+    "b": {
+      "$type": "Link",
+      "title": "Deposit Details",
+      "href": "https://www.baidu.com"
+    }
+  }
+]
