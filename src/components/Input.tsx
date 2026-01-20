@@ -2,23 +2,22 @@ import type { FC, ReactNode } from "react";
 import { clx } from "@/utils/clx";
 import {
   Form,
-  Cascader as AntdCascader,
-  type CascaderProps as AntdCascaderProps,
+  Input as AntdInput,
+  type InputProps as AntdInputProps,
 } from "antd";
 
-export type CascaderProps = AntdCascaderProps & {
+export type InputProps = AntdInputProps & {
   className?: string;
   children?: ReactNode;
   parentKey?: string;
-  // parentKeys?: string[];
+  parentKeys?: string[];
   label?: string;
   required?: boolean;
 };
 
-const Cascader: FC<CascaderProps> = ({
+const Input: FC<InputProps> = ({
   className,
   parentKey,
-  // parentKeys,
   label,
   required,
   ...props
@@ -34,9 +33,9 @@ const Cascader: FC<CascaderProps> = ({
       ]}
       className={clx("content-end", className)}
     >
-      <AntdCascader {...props} className="w-full" />
+      <AntdInput {...props} className="w-full" />
     </Form.Item>
   );
 };
 
-export default Cascader;
+export default Input;

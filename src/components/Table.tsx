@@ -6,7 +6,7 @@ import { Table as AntdTable } from "antd";
 type Row = Record<string, unknown>;
 type DataWrapper = { total?: number; data?: Row[] };
 
-export interface TableProps {
+export type TableProps = {
   parentKey?: string;
   parentKeys?: string[];
   className?: string;

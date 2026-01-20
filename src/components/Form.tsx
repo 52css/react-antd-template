@@ -5,14 +5,14 @@ import { toArray } from "@/utils/toArray";
 import Title from "@/components/Title";
 import View from "@/components/View";
 
-export interface FormProps {
+export type FormProps = {
   className?: string;
   children?: ReactNode;
   parentKey?: string;
   parentKeys?: string[];
   title?: string;
   params?: any[];
-}
+};
 
 const Form: FC<FormProps> = ({
   className,

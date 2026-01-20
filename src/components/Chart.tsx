@@ -8,7 +8,7 @@ import {
 import * as echarts from "echarts";
 import { clx } from "@/utils/clx";
 
-export interface ChartProps {
+export type ChartProps = {
   className?: string;
   children?: ReactNode;
   title?: string;

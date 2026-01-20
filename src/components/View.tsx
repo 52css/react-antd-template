@@ -6,7 +6,7 @@ import Stat from "@/components/Stat";
 import Table from "@/components/Table";
 import Chart from "@/components/Chart";
 
-export interface ViewProps {
+export type ViewProps = {
   className?: string;
   children?: ReactNode;
   parentKey?: string | number;
@@ -16,7 +16,7 @@ export interface ViewProps {
     $type?: string;
     [key: string]: any;
   };
-}
+};
 
 const View: FC<ViewProps> = ({
   className,

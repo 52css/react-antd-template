@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { clx } from "@/utils/clx";
 
-export interface TitleProps {
+export type TitleProps = {
   parentKey?: string;
   parentKeys?: string[];
   title?: string;

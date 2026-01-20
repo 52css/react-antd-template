@@ -2,7 +2,7 @@ import type { FC, ReactNode } from "react";
 import { Statistic } from "antd";
 import { clx } from "@/utils/clx";
 
-export interface StatProps {
+export type StatProps = {
   parentKey?: string;
   parentKeys?: string[];
   title?: ReactNode | string;

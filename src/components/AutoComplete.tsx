@@ -6,14 +6,14 @@ import {
   type AutoCompleteProps as AntdAutoCompleteProps,
 } from "antd";
 
-export interface AutoCompleteProps extends AntdAutoCompleteProps {
+export type AutoCompleteProps = AntdAutoCompleteProps & {
   className?: string;
   children?: ReactNode;
   parentKey?: string;
   parentKeys?: string[];
   label?: string;
   required?: boolean;
-}
+};
 
 const AutoComplete: FC<AutoCompleteProps> = ({
   className,
